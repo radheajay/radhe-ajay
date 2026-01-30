@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
           <a href="#about" className="text-gray-300 hover:text-white text-sm font-medium transition-colors">About</a>
         </div>
 
-        <button className="bg-primary hover:bg-blue-600 text-white text-sm font-bold py-2 px-4 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(37,106,244,0.3)]">
+        <button className="bg-primary hover:bg-blue-600 text-white text-sm font-bold py-2 px-4 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(37,106,244,0.3)] hover:shadow-[0_0_30px_rgba(37,106,244,0.8)]">
           Contact
         </button>
       </nav>

@@ -56,7 +56,7 @@ export const BentoGrid: React.FC = () => {
       </a>
 
       {/* 5. About Me */}
-      <div className="md:col-span-1 lg:col-span-1 lg:row-span-2 glass-card rounded-2xl p-6 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(37,106,244,0.15)] hover:border-primary/30 group">
+      <a href="#about" className="md:col-span-1 lg:col-span-1 lg:row-span-2 glass-card rounded-2xl p-6 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(37,106,244,0.15)] hover:border-primary/30 group block">
         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform duration-300">
           <User className="text-white" size={24} />
         </div>
@@ -69,31 +69,31 @@ export const BentoGrid: React.FC = () => {
           <p className="text-sm font-medium">Bachelor of Computer Applications</p>
           <p className="text-xs text-gray-400">MMDU University</p>
         </div>
-      </div>
+      </a>
 
       {/* 6. Projects Count */}
-      <div className="md:col-span-1 glass-card rounded-2xl p-6 flex flex-col justify-center items-center text-center transition-all duration-300 hover:-translate-y-1 border-t-4 border-t-primary">
+      <a href="#projects" className="md:col-span-1 glass-card rounded-2xl p-6 flex flex-col justify-center items-center text-center transition-all duration-300 hover:-translate-y-1 border-t-4 border-t-primary block">
         <span className="text-4xl font-bold text-white mb-1">10+</span>
         <span className="text-sm text-gray-400">Projects Completed</span>
-      </div>
+      </a>
 
       {/* 7. Learning Status */}
-      <div className="md:col-span-1 glass-card rounded-2xl p-6 flex flex-col justify-center items-center text-center transition-all duration-300 hover:-translate-y-1 border-t-4 border-t-purple-500">
+      <a href="#learning" className="md:col-span-1 glass-card rounded-2xl p-6 flex flex-col justify-center items-center text-center transition-all duration-300 hover:-translate-y-1 border-t-4 border-t-purple-500 block">
         <span className="text-xl font-bold text-white mb-2"><Sparkles className="inline-block mb-1" size={28} /></span>
         <span className="text-sm font-bold text-white">Learning & Building</span>
         <span className="text-xs text-gray-400 mt-1">Daily</span>
-      </div>
+      </a>
 
       {/* 8. Collaboration CTA */}
-      <div className="md:col-span-2 lg:col-span-2 glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-primary/10 to-transparent">
+      <a href="#contact" className="md:col-span-2 lg:col-span-2 glass-card rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-r from-primary/10 to-transparent block">
         <div>
           <h3 className="text-xl font-bold mb-2">Interested in collaboration?</h3>
           <p className="text-sm text-gray-400">I am currently available for freelance projects and consulting.</p>
         </div>
-        <button className="whitespace-nowrap bg-white text-background-dark hover:bg-gray-200 text-sm font-bold py-3 px-6 rounded-lg transition-colors">
+        <div className="whitespace-nowrap bg-white text-background-dark hover:bg-gray-200 text-sm font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block hover:shadow-[0_0_25px_rgba(37,106,244,0.6)]">
           Get in Touch
-        </button>
-      </div>
+        </div>
+      </a>
 
        {/* 9. My Project - Project X (Digital Twin equivalent) */}
       <a 
@@ -134,7 +134,7 @@ export const BentoGrid: React.FC = () => {
             </a>
         </div>
         <div className="space-y-4 z-10 relative">
-            <div className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer group">
+            <a href="#" className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer group block">
                 <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center group-hover:bg-red-500/20 transition-colors">
                     <Play size={20} className="fill-current" />
                 </div>
@@ -142,8 +142,8 @@ export const BentoGrid: React.FC = () => {
                     <p className="text-sm font-bold text-white group-hover:text-primary transition-colors">Building AI Apps from Scratch</p>
                     <p className="text-xs text-gray-500">Video Tutorial • 15k Views</p>
                 </div>
-            </div>
-            <div className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer group">
+            </a>
+            <a href="#" className="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer group block">
                 <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
                     <Mic size={20} />
                 </div>
@@ -151,13 +151,13 @@ export const BentoGrid: React.FC = () => {
                     <p className="text-sm font-bold text-white group-hover:text-primary transition-colors">The Future of Web Dev Podcast</p>
                     <p className="text-xs text-gray-500">Audio • Episode 42</p>
                 </div>
-            </div>
+            </a>
         </div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/5 rounded-full blur-[60px] pointer-events-none"></div>
       </div>
 
       {/* 11. Radhe Section */}
-      <div className="md:col-span-1 lg:col-span-1 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 border border-primary/20 relative overflow-hidden group">
+      <a href="#radhe" className="md:col-span-1 lg:col-span-1 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 border border-primary/20 relative overflow-hidden group block">
          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
          <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-primary to-purple-600 flex items-center justify-center mb-4 shadow-lg shadow-primary/30">
             <Feather size={32} className="text-white" />
@@ -165,7 +165,7 @@ export const BentoGrid: React.FC = () => {
          <h3 className="text-2xl font-bold mb-1 font-display tracking-tight">Radhe</h3>
          <p className="text-xs text-primary font-mono bg-primary/10 px-2 py-1 rounded mb-3">CREATIVE SOUL</p>
          <p className="text-sm text-gray-400 italic">"Innovating with code, inspiring with art."</p>
-      </div>
+      </a>
 
     </div>
   );
