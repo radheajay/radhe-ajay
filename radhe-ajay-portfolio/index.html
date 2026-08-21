@@ -47,20 +47,33 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #1d4ed8; 
         }
+        @keyframes gridMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 32px 32px; }
+        }
         .bg-code-pattern {
             background-image: radial-gradient(#256af4 1px, transparent 1px);
             background-size: 32px 32px;
             opacity: 0.1;
+            animation: gridMove 20s linear infinite;
+        }
+        .bg-code-pattern-slow {
+            background-image: radial-gradient(#256af4 1px, transparent 1px);
+            background-size: 48px 48px;
+            opacity: 0.05;
+            animation: gridMove 30s linear infinite reverse;
         }
         .glass-card {
-            background: rgba(22, 27, 38, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(22, 27, 38, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
         .glass-card:hover {
-            border-color: rgba(37, 106, 244, 0.5);
-            box-shadow: 0 0 25px rgba(37, 106, 244, 0.15);
+            border-color: rgba(37, 106, 244, 0.8);
+            box-shadow: 0 0 35px rgba(37, 106, 244, 0.3), inset 0 0 10px rgba(37, 106, 244, 0.1);
+            background: rgba(37, 106, 244, 0.05);
         }
         /* Animation for the open to work pulse */
         @keyframes ping {
